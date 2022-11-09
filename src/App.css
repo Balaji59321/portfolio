@@ -1,0 +1,74 @@
+.image_rotate{
+    /* width: 600px; */
+    position: absolute;
+    /* top: 10%; */
+    /* left: 32%; */
+    top: 50%;
+    left: 50%;
+    animation: App-logo-spin 4s linear 0s infinite normal;
+    scroll-behavior: smooth;
+}
+
+@keyframes App-logo-spin {
+
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.btn {
+    color: whitesmoke !important;
+    text-transform: capitalize !important;
+    font-weight: bolder !important;
+    letter-spacing: 1px !important;
+    background-color: grey !important;
+    font-size: 16px !important;
+}
+
+.heading{
+    font-size: 20px;
+    flex: 0.3;
+}
+
+.heading::before{
+    width: 80px;
+    height: 10px;
+    background-color: #FFA804;
+    border-radius: 10px;
+    display: block;
+    content: '';
+}
+
+.heading_middle{
+  font-size: 20px;
+}
+
+.heading_middle::before{
+  height: 10px;
+  background-color: #FFA804;
+  border-radius: 10px;
+  margin: "auto";
+  display: block;
+  content: '';
+}
+
+.viewmore{
+  cursor: pointer;
+}
+
+.modal{
+  position: absolute;
+  height: 300px;
+  width: 91%;
+  text-align: center;
+  border: 15px solid #D73F4F;
+  display: none;
+}
+
+.viewmore:hover + .modal{
+  display: flex;
+  flex-direction: column;
+}
