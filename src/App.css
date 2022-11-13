@@ -57,18 +57,21 @@
 
 .viewmore{
   cursor: pointer;
+  color: "black !important"
 }
 
 .modal{
   position: absolute;
-  height: 300px;
-  width: 91%;
+  height: 80%;
+  width: 96.3%;
   text-align: center;
-  border: 15px solid #D73F4F;
   display: none;
+  
 }
 
 .viewmore:hover + .modal{
   display: flex;
   flex-direction: column;
+  color: "black !important";
+  margin: "auto";
 }

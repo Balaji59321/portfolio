@@ -49,33 +49,6 @@ function App() {
         </Box>
       </Box>
     </Box>
-    <Box p={{xs: 1,md:5}} m={{xs: 1,md: 3}} mb={7} id='projects'>
-      <Box sx={{display: "flex",alignItems:'center',flexDirection:"column"}}>
-        <Typography className='heading_middle' sx={{margin: "auto",fontWeight: 600}} variant='h4' p={5}>My Portfolio</Typography>
-        <hr style={{height: "80px",border: "1px solid grey",borderRadius: "3px",margin: "0 0 30px 0"}} />
-        <Box sx={{display: "flex",flexWrap: "wrap",gap: 10,justifyContent:"center"}}>
-        {Object.values(project).map(ele =>
-          <Box sx={{border: "1px solid grey",display: "flex",justifyContent:"center",flexDirection: "column",overflow: "hidden",position: "relative"}} m={1}>
-          <Typography variant='h7' sx={{backgroundColor: "grey",color: "#fff",width: "100%"}} p={1}>{ele.title}</Typography>
-          <Box sx={{width: {xs: "280px",md: "350px"},height: {xs: "230px",md: "300px"}}}>
-            <img src={ele.source} alt='screenshot of project' style={{backgroundImage: "cover",backgroundRepeat: "no-repeat",width: "inherit",height: "inherit"}} />
-          </Box>
-          <Box sx={{display:"flex",justifyContent:"center",gap: "10px",flexWrap: "wrap",alignItems:"center",backgroundColor: "#fff"}} p={1}>
-              <a href={ele.frontend_code} alt='deployed link' style={{textDecoration:'None'}} target='__blank' rel="noopener noreferrer"><Button sx={{color:"#D73F4F",textTransform: "Capitalize",border: "2px solid #D73F4F"}}><CodeIcon /><span style={{marginLeft:"7px"}}>FE Code</span></Button></a>
-              {ele.backend_code && <a href={ele.backend_code} alt='deployed link' style={{textDecoration:'None'}} target='__blank'><Button sx={{color:"#D73F4F",textTransform: "Capitalize",border: "2px solid #D73F4F"}}><CodeIcon /><span style={{marginLeft:"7px"}}>BE Code</span></Button></a>}
-              <a href={ele.fe_deployed_link} alt='deployed link' style={{textDecoration:'None'}} target='__blank' rel="noopener noreferrer"><Button sx={{color:"#D73F4F",textTransform: "Capitalize",border: "2px solid #D73F4F"}}><LinkIcon /><span style={{marginLeft:"7px"}}>Website</span></Button></a>
-            </Box>
-          <Button className='viewmore' sx={{textAlign:"center",backgroundColor: "#D73F4F",color: "#fff",width: "100%",textTransform: 'capitalize'}} p={2}>View More ^</Button>
-          <Box className='modal' p={0.2} sx={{backgroundColor: "white"}}>
-            <Typography variant='h6'>{ele.title}</Typography>
-            <Typography variant='h7' sx={{textAlign:"left"}} p={1}>{ele.description}</Typography>
-            <Typography variant='h7' sx={{display: "flex",alignItems: "center"}} py={2}><LocalOfferIcon />Tags : <span style={{paddingLeft: "5px"}}>{ele.tags.join(" , ")}</span></Typography>
-          </Box>
-        </Box>
-        )}
-        </Box>
-      </Box>
-    </Box>
     <Box sx={{ transform: "skewY(-3deg)",width: "100%",backgroundImage : 'linear-gradient(45deg, #333,#555)',color: "#fff"}} py={6}>
       <Box sx={{ transform: "skewY(3deg)",height: "fit-content",border: "1px solid #ffffff",display: "flex",borderRadius: "5px",backgroundColor: "#555",alignItems: "center",flexDirection: {xs: "column",md: "row"} }} my={8} mx={{xs: 2,md:20,lg:30}} px={{xs: 1,md:5,lg:9}} py={5}>
         <Heading title={"My Skills"} description={"Tech Stack"} />
@@ -128,6 +101,33 @@ function App() {
             <img src={`${problem}`} alt='ICON' style={{width: '90px'}}/>
             <Typography>Problem Solving</Typography>
           </Box>
+        </Box>
+      </Box>
+    </Box>
+    <Box p={{xs: 1,md:5}} m={{xs: 1,md: 3}} mb={7} id='projects'>
+      <Box sx={{display: "flex",alignItems:'center',flexDirection:"column"}}>
+        <Typography className='heading_middle' sx={{margin: "auto",fontWeight: 600}} variant='h4' p={5}>My Projects</Typography>
+        <hr style={{height: "80px",border: "1px solid grey",borderRadius: "3px",margin: "0 0 30px 0"}} />
+        <Box sx={{display: "flex",flexWrap: "wrap",gap: 10,justifyContent:"center"}}>
+        {Object.values(project).map(ele =>
+          <Box sx={{border: "1px solid grey",display: "flex",justifyContent:"center",flexDirection: "column",overflow: "hidden",position: "relative"}} m={1}>
+          <Typography variant='h7' sx={{backgroundColor: "grey",color: "#fff",width: "100%"}} p={1}>{ele.title}</Typography>
+          <Box sx={{width: {xs: "280px",md: "350px"},height: {xs: "230px",md: "300px"}}}>
+            <img src={ele.source} alt='screenshot of project' style={{backgroundImage: "cover",backgroundRepeat: "no-repeat",width: "inherit",height: "inherit"}} />
+          </Box>
+          <Box sx={{display:"flex",justifyContent:"center",gap: "10px",flexWrap: "wrap",alignItems:"center",backgroundColor: "#fff"}} p={1}>
+              <a href={ele.frontend_code} alt='deployed link' style={{textDecoration:'None'}} target='__blank' rel="noopener noreferrer"><Button sx={{color:"#D73F4F",textTransform: "Capitalize",border: "2px solid #D73F4F"}}><CodeIcon /><span style={{marginLeft:"7px"}}>FE Code</span></Button></a>
+              {ele.backend_code && <a href={ele.backend_code} alt='deployed link' style={{textDecoration:'None'}} target='__blank'><Button sx={{color:"#D73F4F",textTransform: "Capitalize",border: "2px solid #D73F4F"}}><CodeIcon /><span style={{marginLeft:"7px"}}>BE Code</span></Button></a>}
+              <a href={ele.fe_deployed_link} alt='deployed link' style={{textDecoration:'None'}} target='__blank' rel="noopener noreferrer"><Button sx={{color:"#D73F4F",textTransform: "Capitalize",border: "2px solid #D73F4F"}}><LinkIcon /><span style={{marginLeft:"7px"}}>Website</span></Button></a>
+            </Box>
+          <Button className='viewmore' sx={{textAlign:"center",backgroundColor: "#D73F4F",color: "#fff",width: "100%",textTransform: 'capitalize'}} p={2}>View More ^</Button>
+          <Box className='modal' p={0.2} sx={{backgroundColor: "white",border: {xs: "4px solid #D73F4F",md: "5px solid #D73F4F"}}}>
+            <Typography variant='h6'>{ele.title}</Typography>
+            <Typography variant='h7' sx={{textAlign:"left"}} p={1}>{ele.description}</Typography>
+            <Typography variant='h7' sx={{display: "flex",alignItems: "center"}} py={2}><LocalOfferIcon />Tags : <span style={{paddingLeft: "5px"}}>{ele.tags.join(" , ")}</span></Typography>
+          </Box>
+        </Box>
+        )}
         </Box>
       </Box>
     </Box>
