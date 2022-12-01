@@ -26,12 +26,14 @@ import Covid19 from "./Assets/covid19.png";
 import Resume from "./Assets/resume.png";
 import AWS from "./Assets/aws.png";
 import Expense from  "./Assets/expense.png";
+import Chat from "./Assets/Chat.png";
 import Milk from  "./Assets/milk.png";
 
 const project = {
-  awspolymer: {title: "AWS Polymer Clone",tags: ['React','CSS','Express','Mongo DB'],description: 'AWS search clone which is built using react and node js as backend',backend_code: 'https://github.com/Balaji59321/awspolymerbe',frontend_code: 'https://github.com/Balaji59321/awspolymerfe',fe_deployed_link: 'https://aws-polymer-search-clone.netlify.app/',backend_deployed_link: 'https://aws-polymer-clone.herokuapp.com/',source: AWS},
-  milktracker: {title: "Milk Tracker",tags: ['React','CSS','Express','Mongo DB'],description: 'Application helps in managing day-to-day customer transactions on milk quantity,purity,fat etc.. and records and created and maintained for audit purposes',backend_code: 'https://github.com/Balaji59321/milkmanagerBE',frontend_code: 'https://github.com/Balaji59321/milktrackerFE',fe_deployed_link: 'https://milk-tracker-balaji.netlify.app',backend_deployed_link: 'https://milk-manager-be.herokuapp.com/',source: Milk},
-  moneymanager: {title: "Money Manager",tags: ['React','CSS','Express','Mongo DB'],description: 'Live Application used for managing the expense/expenditure.Users can update the expense type and other details and get the resultant data in the form of interactive charts',backend_code: '',frontend_code: '',fe_deployed_link: 'https://money-manager-frontend-balaji.netlify.app',backend_deployed_link: 'https://money-manager-backend-balaji.herokuapp.com',source: Expense},
+  awspolymer: {title: "AWS Polymer Clone",tags: ['React','CSS','Express','Mongo DB'],description: 'AWS search clone which is built using react and node js as backend',backend_code: 'https://github.com/Balaji59321/awspolymerbe',frontend_code: 'https://github.com/Balaji59321/awspolymerfe',fe_deployed_link: 'https://aws-polymer-search-clone.netlify.app/',backend_deployed_link: 'https://aws-polymer-be.onrender.com',source: AWS},
+  chatapp: {title: "Chat App",tags: ['React','CSS','Express','Mongo DB','Socket IO'],description: 'Webpage which can be used for 1:1, Group Chat Communcations.Datas are realtime as this uses socket.io',backend_code: 'https://github.com/balaji59321/chat-app',frontend_code: 'https://github.com/balaji59321/chat-app',fe_deployed_link: 'https://chat-app-qw9o.onrender.com/',backend_deployed_link: 'https://chat-app-qw9o.onrender.com/',source: Chat},
+  milktracker: {title: "Milk Tracker",tags: ['React','CSS','Express','Mongo DB'],description: 'Application helps in managing day-to-day customer transactions on milk quantity,purity,fat etc.. and records and created and maintained for audit purposes',backend_code: 'https://github.com/Balaji59321/milkmanagerBE',frontend_code: 'https://github.com/Balaji59321/milktrackerFE',fe_deployed_link: 'https://milk-tracker-balaji.netlify.app',backend_deployed_link: 'https://money-manager-api-q3o8.onrender.com',source: Milk},
+  moneymanager: {title: "Money Manager",tags: ['React','CSS','Express','Mongo DB'],description: 'Live Application used for managing the expense/expenditure.Users can update the expense type and other details and get the resultant data in the form of interactive charts',backend_code: '',frontend_code: '',fe_deployed_link: 'https://money-manager-frontend-balaji.netlify.app',backend_deployed_link: 'https://money-manager-be.onrender.com',source: Expense},
   resumebuilder: {title: "Resume Builder",tags: ['React','CSS','Redux'],description: 'Interactive Application built using React and Redux which can generate the resume as per the user inputs and finally able to download the same as PDF',backend_code: '',frontend_code: 'https://github.com/Balaji59321/resumeBuilder',fe_deployed_link: 'https://resumebuilder-balaji.netlify.app',backend_deployed_link: '',source: Resume},
   netflixclone: {title: "Netflix Clone",tags: ['React','CSS'],description: 'Application which provides the feel of actual Netflix which inturn consumes data from the TMDB api',backend_code: '',frontend_code: 'https://github.com/Balaji59321/Netflix_Clone',fe_deployed_link: 'https://netflixclone-a4085.web.app',backend_deployed_link: '',source : Netflix},
   covid19tracker: {title: "Covid 19 Tracker",tags: ['React','CSS'],description: 'Application developed using react and its libraries by consuming the data from disease.sh api.Daily Recoveries,cases,deaths at country level can be visualized easily',backend_code: '',frontend_code: 'https://github.com/Balaji59321/covid19Tracker',fe_deployed_link: 'https://covid19tracker-65664.web.app',backend_deployed_link: '',source: Covid19}
@@ -45,7 +47,7 @@ function App() {
       <Box sx={{ transform: "skewY(3deg)",height: "fit-content",border: "1px solid #04648A",display: "flex",borderRadius: "5px",alignItems: "center",flexDirection: {xs: "column",md: "row"},gap: 5 }} my={8} mx={{xs: 3,md:20,lg:30}} px={{xs: 2,md: 9}} py={5}>
         <Heading title={"About Me"} description={"My Work"} />
         <Box sx={{flex:0.7}}>
-          <Typography>I am Balaji Narasimhan M V L ,A professional Shopware developer from Computer Science background having 3 years of Experience in Both Development and in Quantity Assurance.On my free time I develop apps for my ideas on mind and I like playing drawing and Painting. I have a lot of mentors which I learnt from because they are the one that made me who I am today. I usually do a lot of things at my free time which makes me in love with myself.</Typography>
+          <Typography>I am Balaji Narasimhan M V L ,A professional Software developer from Computer Science background having 3 years of Experience in Both Development and in Quantity Assurance.On my free time I develop apps for my ideas on mind and I like playing drawing and Painting. I have a lot of mentors which I learnt from because they are the one that made me who I am today. I usually do a lot of things at my free time which makes me in love with myself.</Typography>
         </Box>
       </Box>
     </Box>
@@ -106,7 +108,8 @@ function App() {
     </Box>
     <Box p={{xs: 1,md:5}} m={{xs: 1,md: 3}} mb={7} id='projects'>
       <Box sx={{display: "flex",alignItems:'center',flexDirection:"column"}}>
-        <Typography className='heading_middle' sx={{margin: "auto",fontWeight: 600}} variant='h4' p={5}>My Projects</Typography>
+        <Typography className='heading_middle' sx={{margin: "auto",fontWeight: 600}} variant='h4' pt={5}>My Projects</Typography>
+        <Typography variant='h7' pb={5} sx={{fontSize:"23px"}}>guest@gmail.com / 123456</Typography>
         <hr style={{height: "80px",border: "1px solid grey",borderRadius: "3px",margin: "0 0 30px 0"}} />
         <Box sx={{display: "flex",flexWrap: "wrap",gap: 10,justifyContent:"center"}}>
         {Object.values(project).map(ele =>
@@ -124,7 +127,7 @@ function App() {
           <Box className='modal' p={0.2} sx={{backgroundColor: "white",border: {xs: "4px solid #D73F4F",md: "5px solid #D73F4F"}}}>
             <Typography variant='h6'>{ele.title}</Typography>
             <Typography variant='h7' sx={{textAlign:"left"}} p={1}>{ele.description}</Typography>
-            <Typography variant='h7' sx={{display: "flex",alignItems: "center"}} py={2}><LocalOfferIcon />Tags : <span style={{paddingLeft: "5px"}}>{ele.tags.join(" , ")}</span></Typography>
+            <Typography variant='h7' sx={{display: "flex",alignItems: "center"}} py={2}><LocalOfferIcon />Tags: <span style={{paddingLeft: "5px"}}>{ele.tags.join(" , ")}</span></Typography>
           </Box>
         </Box>
         )}

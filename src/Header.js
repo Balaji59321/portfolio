@@ -15,10 +15,10 @@ const Header = () => {
     </Box>
     <Box sx={{color: "#fff",textAlign:"center",position: "absolute",top: "50%",left: "50%",transform:'translate(-50%,-50%)'}} px={{xs: 2,md:5}} py={3}>
       <Typography variant='h5' sx={{fontWeight: 700,fontSize: {xs: "20px",md: "30px"}}}>Hi 👋, I am Balaji Narasimhan M V L</Typography>
-      <Typography variant='h3' sx={{fontWeight: "bolder",fontSize: {xs: "30px",md: "50px"}}}>A passionate Full Stack Developer</Typography>
+      <Typography variant='h3' sx={{fontWeight: "bolder",fontSize: {xs: "30px",md: "50px"}}}>A Passionate Full Stack Developer</Typography>
       <Box sx={{display: "flex",justifyContent: "center",gap: 5}} m={3}>
         <a href='#projects' style={{textDecoration:"none"}} rel="noopener noreferrer"><Button variant='contained' className='btn'>Projects</Button></a>
-        <a href='https://drive.google.com/file/d/1riWKS5CTyE0nJv32OZW51mfd_o_ebu9O/view?usp=share_link' target='__blank' rel="noopener noreferrer" style={{textDecoration: "none"}}><Button variant='contained' className='btn'>Resume</Button></a>
+        <a href='https://drive.google.com/file/d/1rITYS73Z1xKKdpnIIvXGrUMS3DDblpa8/view?usp=sharing' target='__blank' rel="noopener noreferrer" style={{textDecoration: "none"}}><Button variant='contained' className='btn'>Resume</Button></a>
       </Box>
       <Box sx={{display: "flex",justifyContent: "center",gap: "10px",cursor: "pointer"}}>
           <a href='https://www.linkedin.com/in/balaji-narasimhan-m-v-l-138aa4144/' target='__blank' rel="noopener noreferrer" style={{textDecoration: "none",color:"white"}}><GitHubIcon fontSize='large'/></a>
