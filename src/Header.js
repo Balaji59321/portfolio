@@ -21,8 +21,8 @@ const Header = () => {
         <a href='https://drive.google.com/file/d/1rITYS73Z1xKKdpnIIvXGrUMS3DDblpa8/view?usp=sharing' target='__blank' rel="noopener noreferrer" style={{textDecoration: "none"}}><Button variant='contained' className='btn'>Resume</Button></a>
       </Box>
       <Box sx={{display: "flex",justifyContent: "center",gap: "10px",cursor: "pointer"}}>
-          <a href='https://www.linkedin.com/in/balaji-narasimhan-m-v-l-138aa4144/' target='__blank' rel="noopener noreferrer" style={{textDecoration: "none",color:"white"}}><GitHubIcon fontSize='large'/></a>
-          <a href='https://github.com/Balaji59321/' target='__blank' rel="noopener noreferrer" style={{textDecoration: "none",color:"white"}}><LinkedInIcon fontSize='large' /></a>
+          <a href='https://github.com/Balaji59321/' target='__blank' rel="noopener noreferrer" style={{textDecoration: "none",color:"white"}}><GitHubIcon fontSize='large'/></a>
+          <a href='https://www.linkedin.com/in/balaji-narasimhan-m-v-l-138aa4144/' target='__blank' rel="noopener noreferrer" style={{textDecoration: "none",color:"white"}}><LinkedInIcon fontSize='large' /></a>
       </Box>
     </Box>
     </Box>
